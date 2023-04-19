@@ -12,21 +12,22 @@ public class Task1 {
     public static List<Person> allPeople = new ArrayList<Person>();
 
     static {
-        allPeople.add(Person.createMale("»‚‡ÌÓ‚ »‚‡Ì", new Date()));  //ÒÂ„Ó‰Ìˇ Ó‰ËÎÒˇ    id=0
-        allPeople.add(Person.createMale("œÂÚÓ‚ œÂÚ", new Date()));  //ÒÂ„Ó‰Ìˇ Ó‰ËÎÒˇ    id=1
+        allPeople.add(Person.createMale("–ò–≤–∞–Ω–æ–≤ –ò–≤–∞–Ω", new Date()));  //—Å–µ–≥–æ–¥–Ω—è —Ä–æ–¥–∏–ª—Å—è    id=0
+        allPeople.add(Person.createMale("–ü–µ—Ç—Ä–æ–≤ –ü–µ—Ç—Ä", new Date()));  //—Å–µ–≥–æ–¥–Ω—è —Ä–æ–¥–∏–ª—Å—è    id=1
     }
 
+
     /*
-    -c => ÒÓÁ‰‡Ú¸ SimpleDateFormat, ‰Îˇ ı‡ÌÂÌËˇ ‰Ìˇ ÓÊ‰ÂÌËˇ ˜ÂÎÓ‚ÂÍ‡
-    ÒÓÁ‰‡ÂÏ SimpleDateFormat Ë ÔÂÓ·‡ÁÛÂÏ ÚÂÚËÈ ‡„ÛÏÂÌÚ main ‚ ÒÚÓÍÛ ˜ÂÂÁ Date, Ú.Í.
-    ‚ÚÓÓÈ Ô‡‡ÏÂÚ ‚ Person.create***** ˇ‚ÎˇÂÚÒˇ Date
-    switch (ÒÏÓÚËÏ Ì‡ ÔÂ‚˚È ‡„ÛÏÂÌÚ Ô‡‡ÏÂÚÓ‚)
-    case -c -> m\f? addPeople.man:addPeople.woman(args[1],args[3])
-    case -r -> args[1] Û Ì‡Ò id => ÔÂÓ·‡ÁÓ‚‡Ú¸ ‚ int Ë ‚˚‚ÂÒÚË ÔÓ‰ ‰‡ÌÌ˚Ï ÌÓÏÂÓÏ ‰‡ÌÌ˚Â ËÁ ÒÔËÒÍ‡
-    case -u -> Ó·ÌÓ‚ËÚ¸ ‰‡ÌÌ˚Â, Ú.Â. ÂÒÎË ÔË¯ÎË ÌÓ‚˚Â Ô‡‡ÏÂÚ˚, ÚÓ Á‡ÏÂÌËÚ¸ Ô‡‡ÏÂÚ˚ ÌÂÍÓÚÓ˚ı Ò‚ÓÈÒÚ‚
-    Ì‡ ÌÓ‚˚Â ˜ÂÂÁ ÒÂÚÚÂ˚ ÔÓ id
-    case -d -> ÔÓÒÚÓ ‚ÒÂ Û‰‡ÎËÚ¸ ˜ÂÂÁ get(id)
-     */
+    -c => —Å–æ–∑–¥–∞—Ç—å SimpleDateFormat, –¥–ª—è —Ö—Ä–∞–Ω–µ–Ω–∏—è –¥–Ω—è —Ä–æ–∂–¥–µ–Ω–∏—è —á–µ–ª–æ–≤–µ–∫–∞
+    —Å–æ–∑–¥–∞–µ–º SimpleDateFormat –∏ –ø—Ä–µ–æ–±—Ä–∞–∑—É–µ–º —Ç—Ä–µ—Ç–∏–π –∞—Ä–≥—É–º–µ–Ω—Ç main –≤ —Å—Ç—Ä–æ–∫—É —á–µ—Ä–µ–∑ Date, —Ç.–∫.
+    –≤—Ç–æ—Ä–æ–π –ø–∞—Ä–∞–º–µ—Ç—Ä –≤ Person.create***** —è–≤–ª—è–µ—Ç—Å—è Date
+    switch (—Å–º–æ—Ç—Ä–∏–º –Ω–∞ –ø–µ—Ä–≤—ã–π –∞—Ä–≥—É–º–µ–Ω—Ç –ø–∞—Ä–∞–º–µ—Ç—Ä–æ–≤)
+            case -c -> m\f? addPeople.man:addPeople.woman(args[1],args[3])
+            case -r -> args[1] —É –Ω–∞—Å id => –ø—Ä–µ–æ–±—Ä–∞–∑–æ–≤–∞—Ç—å –≤ int –∏ –≤—ã–≤–µ—Å—Ç–∏ –ø–æ–¥ –¥–∞–Ω–Ω—ã–º –Ω–æ–º–µ—Ä–æ–º –¥–∞–Ω–Ω—ã–µ –∏–∑ —Å–ø–∏—Å–∫–∞
+    case -u -> –æ–±–Ω–æ–≤–∏—Ç—å –¥–∞–Ω–Ω—ã–µ, —Ç.–µ. –µ—Å–ª–∏ –ø—Ä–∏—à–ª–∏ –Ω–æ–≤—ã–µ –ø–∞—Ä–∞–º–µ—Ç—Ä—ã, —Ç–æ –∑–∞–º–µ–Ω–∏—Ç—å –ø–∞—Ä–∞–º–µ—Ç—Ä—ã –Ω–µ–∫–æ—Ç–æ—Ä—ã—Ö —Å–≤–æ–π—Å—Ç–≤
+    –Ω–∞ –Ω–æ–≤—ã–µ —á–µ—Ä–µ–∑ —Å–µ—Ç—Ç–µ—Ä—ã –ø–æ id
+    case -d -> –ø—Ä–æ—Å—Ç–æ –≤—Å–µ —É–¥–∞–ª–∏—Ç—å —á–µ—Ä–µ–∑ get(id)
+    */
 
     public static void main(String args[]) throws ParseException {
         switch (args[0]) {
@@ -48,7 +49,7 @@ public class Task1 {
     public static void doMethodC(String[] args) throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date date = simpleDateFormat.parse(args[3]);
-        if (args[2].equals("Ï")) {
+        if (args[2].equals("–º")) {
             allPeople.add(Person.createMale(args[1], date));
         } else {
             allPeople.add(Person.createFemale(args[1], date));
@@ -59,7 +60,7 @@ public class Task1 {
     public static void doMethodR(String[] args) throws ParseException {
         int id = Integer.parseInt(args[1]);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
-        String maleOrFemale = allPeople.get(id).getSex() == Sex.MALE ? "Ï" : "Ê";
+        String maleOrFemale = allPeople.get(id).getSex() == Sex.MALE ? "–º" : "–∂";
         System.out.println(allPeople.get(id).getName() + " " + maleOrFemale + " "
                 + simpleDateFormat.format(allPeople.get(id).getBirthDate()));
     }
@@ -69,7 +70,7 @@ public class Task1 {
         DateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
         allPeople.get(id).setBirthDate(simpleDateFormat.parse(args[4]));
         allPeople.get(id).setName(args[2]);
-        if (args[3].equals("Ï")) {
+        if (args[3].equals("–º")) {
             allPeople.get(id).setSex(Sex.MALE);
         } else {
             allPeople.get(id).setSex(Sex.FEMALE);
